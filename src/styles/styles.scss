@@ -31,10 +31,113 @@ body {
 
 header {
     border-bottom: 1px solid #838383;
+
+    .marquee {
+        p {
+            font-family: 'IBM Plex Mono', sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+            margin: 6px 20px;
+            text-transform: uppercase;
+        }
+    }
 }
 
 main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
 
+    .smallerCircle {
+        width: 32vh;
+        height: 32vh;
+        border-radius: 16vh;
+        border: 3px solid #666;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 300ms ease-out;
+
+        #scadpro {
+            width: 14vh;
+        }
+
+        #flux {
+            height: 7vh;
+        }
+
+        svg:last-child {
+            margin-top: 4vh;
+        }
+
+        &::before {
+            display: block;
+            width: 34.5vh;
+            height: 34.5vh;
+            content: '';
+            position: absolute;
+            border-radius: 17.25vh;
+            border: 1px dashed #666;
+            top: -1.25vh;
+            left: -1.25vh;
+            transition: all 300ms ease-out;
+        }
+
+        &::after {
+            display: block;
+            width: 30vh;
+            height: 30vh;
+            content: '';
+            position: absolute;
+            border-radius: 16.5vh;
+            border: solid 1px #666;
+            top: 1vh;
+            left: 1vh;
+            transition: all 300ms ease-out;
+        }
+
+        &:hover {
+            transition: all 300ms ease-out;
+            transform: scale(1.05);
+            border-color: #298FA7;
+
+            &::before, &::after {
+                border-color: #298FA7;
+                transition: all 300ms ease-out;
+            }
+
+            &::before {
+                transform: rotate(135deg);
+            }
+        }
+    }
+
+    .countdown {
+        p {
+            color: #777;
+            margin: 0 0 2px;
+            text-transform: uppercase;
+        }
+
+        span {
+            font-family: 'IBM Plex Mono', sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+        }
+    }
+
+    .centerCircle {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 25vh;
+        border: 3px solid #666;
+        margin: 0 5vw;
+    }
 }
 
 footer {
@@ -65,8 +168,9 @@ footer {
             transition: all 300ms ease-out;
 
             &:hover {
-                background-color: #838383;
+                background-color: #FCE986;
                 color: #060606;
+                font-weight: 500;
                 transition: all 300ms ease-out;
             }
         }

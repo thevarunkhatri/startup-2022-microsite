@@ -1,4 +1,9 @@
 import React from "react"
+import Countdown from 'react-countdown';
+import Marquee from "react-fast-marquee";
+
+import FLUX from '../assets/svg/flux.svg'
+import SCADpro from '../assets/svg/scadpro.svg'
 import '../styles/styles.scss'
 
 export default function Home() {
@@ -6,10 +11,24 @@ export default function Home() {
     <div className="fullPage">
       <div className="box">
         <header>
-          <p>A competition for innovation and growth</p>
+          <Marquee className="marquee" gradientColor={[6,6,6]}>
+            <p>A competition for innovation and growth</p>
+            <p>A competition for innovation and growth</p>
+            <p>A competition for innovation and growth</p>
+          </Marquee>
         </header>
         <main>
-
+          <div className="smallerCircle">
+            <FLUX/>
+            <SCADpro/>
+          </div>
+          <div className="centerCircle">
+ 
+          </div>
+          <div className="smallerCircle countdown">
+            <p>Unlock Full Site</p>
+            <Countdown date={new Date(2022, 0, 15)} />
+          </div>
         </main>
         <footer>
           <ul className="links">

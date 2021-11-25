@@ -7,6 +7,14 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // See below to configure properly
+        }
+      }
+    }
   ],
 }
