@@ -38,7 +38,7 @@ export default function Home() {
                   <stop stop-color="black" offset="0"/>
                   <stop stop-color="white" offset="1"/>
                 </radialGradient>
-                <rect width="100%" height="100%" x="0" y="0" fill="white" />
+                <rect width="10000px" height="5000px" x="0" y="0" fill="white" />
                 <g transform="translate(0, 0)">
                   <circle cx="100" cy="100" r="100" fill="url(#radialFill)"/>
                 </g>
