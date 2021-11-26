@@ -85,6 +85,10 @@ main {
         width: 100%;
         height: 100%;
 
+        @media only screen and (max-width: 600px) {
+            display: none;
+         }
+
         .maskImage {
             background: url('../assets/images/wavedbggold.png');
             background-size: cover;
