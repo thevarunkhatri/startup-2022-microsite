@@ -29,13 +29,13 @@ const PortableCircles = () => (
       
     </div>
     <div className="portableCircles">
-      <div className="smallerCircle countdown">
-        <p>Unlock Full Site</p>
-        <Countdown date={new Date(2022, 0, 15)} />
-      </div>
       <div className="smallerCircle">
         <FLUX/>
         <SCADpro/>
+      </div>
+      <div className="smallerCircle countdown">
+        <p>Unlock Full Site</p>
+        <Countdown date={new Date(2022, 0, 15)} />
       </div>
     </div>
   </>
@@ -96,8 +96,6 @@ export default function Home() {
             </div>
           </div>
           {pageWidth > 900 ? <DesktopCircles/> : <PortableCircles/>}
-
-          
         </main>
 
         <footer>
@@ -115,4 +113,3 @@ export default function Home() {
     </div>
   ) 
 }
-
