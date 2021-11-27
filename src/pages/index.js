@@ -5,6 +5,8 @@ import $ from "jquery";
 
 import FLUX from '../assets/svg/flux.svg'
 import SCADpro from '../assets/svg/scadpro.svg'
+import AstralCircle from '../assets/svg/astralCircle.svg'
+import Logo from '../assets/images/logo.png'
 import '../styles/styles.scss'
 
 const DesktopCircles = () => (
@@ -14,7 +16,8 @@ const DesktopCircles = () => (
         <SCADpro/>
       </div>
       <div className="centerCircle">
-        
+        <AstralCircle/>
+        <img src={Logo}/> 
       </div>
       <div className="smallerCircle countdown">
         <p>Unlock Full Site</p>
@@ -26,7 +29,8 @@ const DesktopCircles = () => (
 const PortableCircles = () => (
   <>
     <div className="centerCircle">
-      
+      <AstralCircle/>
+      <img src={Logo}/>
     </div>
     <div className="portableCircles">
       <div className="smallerCircle">

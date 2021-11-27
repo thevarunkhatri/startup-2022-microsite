@@ -131,7 +131,7 @@ main {
             @media only screen and (max-width: 1100px) {
                 width: 12vh;
             }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 700px) {
                 width: 10vh;
             }
         }
@@ -142,7 +142,7 @@ main {
                 height: 6vh;
             }
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 700px) {
                 height: 5vh;
             }
         }
@@ -216,7 +216,7 @@ main {
             text-transform: uppercase;
             font-size: 2.25vh;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 700px) {
                 font-size: 1.5vh;
             }
         }
@@ -226,23 +226,87 @@ main {
             font-size: 2.75vh;
             font-weight: 500;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 700px) {
                 font-size: 2vh;
             }
         }
     }
 
     .centerCircle {
-        width: 50vh;
-        height: 50vh;
-        border-radius: 25vh;
-        border: 3px solid #666;
-        margin: 0 5vw;
+        width: 60vh;
+        height: 60vh;
+        margin: 0 3.5vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @media only screen and (max-width: 1100px) {
-            width: 45vh;
-            height: 45vh;
+            width: 55vh;
+            height: 55vh;
             margin: 0 3vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            width: 50vh;
+            height: 50vh;
+        }
+
+        svg {
+            height: 100%;
+            width: 100%;
+            transform-origin: center;
+            transition: all 300ms ease-out;
+            border-radius: 50%;
+
+            #outerDash {
+                transform-origin: center;
+                animation: rotateCircle 90s linear 0s infinite;
+            }
+
+            #quadrant {
+                transform-origin: center;
+                animation: rotateCircle 60s linear 0s infinite;
+            }
+
+            #innerStroke {
+                transform-origin: center;
+            }
+
+            #connectedCircle {
+                transform-origin: center;
+                animation: rotateCircle 120s linear 0s infinite reverse;
+            }
+
+            .goldenHover {
+                transition: all 300ms ease-out;
+            }
+
+            &:hover {
+                transition: all 300ms ease-out;
+                transform: scale(1.03);
+
+                .goldenHover {
+                    stroke: #FCE986;
+                    stroke-opacity: 1;
+                    transition: all 300ms ease-out;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            height: 7vh;
+            top: 26.5vh;
+
+            @media only screen and (max-width: 1100px) {
+                height: 6vh;
+                top: 24.5vh;
+            }
+    
+            @media only screen and (max-width: 700px) {
+                top: 22vh;
+            }
         }
     }
 
@@ -357,4 +421,9 @@ footer {
             font-size: 14px;
         }
     }
+}
+
+@keyframes rotateCircle {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
