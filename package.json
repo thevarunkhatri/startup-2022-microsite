@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "SCAD StartUp 2022",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "SCAD StartUp is our annual, week-long design sprint hosted by FLUX - the UX club in collaboration with SCADpro. This is the temporary microsite for SCAD StartUp 2022.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {

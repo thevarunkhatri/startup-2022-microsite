@@ -78,6 +78,8 @@ export default function Home() {
             <p>A competition for innovation and growth</p>
             <p>A competition for innovation and growth</p>
             <p>A competition for innovation and growth</p>
+            <p>A competition for innovation and growth</p>
+            <p>A competition for innovation and growth</p>
           </Marquee>
         </header>
 
@@ -104,10 +106,10 @@ export default function Home() {
 
         <footer>
           <ul className="links">
-            <a href=""><li>Startup 2021</li></a>
-            <a href=""><li>Startup Instagram</li></a>
-            <a href=""><li>FLUX Instagram</li></a>
-            <a href=""><li>Contact Us</li></a>
+            <a href="https://2021.scadstartup.com" target="_blank"><li>Startup 2021</li></a>
+            <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>Startup Instagram</li></a>
+            <a href="https://www.instagram.com/scadflux/" target="_blank"><li>FLUX Instagram</li></a>
+            <a href="mailto:scadflux@gmail.com"><li>Contact Us</li></a>
           </ul>
           <p>
             SCAD StartUp is our annual, week-long design sprint hosted by FLUX - the UX club in collaboration with SCADpro
