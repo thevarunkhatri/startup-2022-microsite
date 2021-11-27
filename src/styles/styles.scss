@@ -206,6 +206,10 @@ main {
             &::before {
                 transform: rotate(135deg);
             }
+
+            &::after {
+                transform: scale(.95);
+            }
         }
     }
 
@@ -267,10 +271,12 @@ main {
             #quadrant {
                 transform-origin: center;
                 animation: rotateCircle 60s linear 0s infinite;
+                transition: all 300ms ease-out;
             }
 
             #innerStroke {
                 transform-origin: center;
+                transition: all 300ms ease-out;
             }
 
             #connectedCircle {
@@ -280,6 +286,11 @@ main {
 
             .goldenHover {
                 transition: all 300ms ease-out;
+            }
+            
+            .shrink {
+                transition: all 300ms ease-out;
+                transform-origin: center;
             }
 
             &:hover {
@@ -291,6 +302,11 @@ main {
                     stroke-opacity: 1;
                     transition: all 300ms ease-out;
                 }
+
+                .shrink  {
+                    transition: all 300ms ease-out;
+                    transform: scale(0.93);
+                }          
             }
         }
 

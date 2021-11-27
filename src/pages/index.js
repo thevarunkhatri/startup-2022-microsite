@@ -61,7 +61,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    $(".maskImage").mousemove(function(e) {
+    $("main").mousemove(function(e) {
       var parentOffset = $(this).parent().offset();
       var relX = (e.pageX - parentOffset.left) - 100;
       var relY = (e.pageY - parentOffset.top) - 100;
@@ -112,7 +112,7 @@ export default function Home() {
             <a href="mailto:scadflux@gmail.com"><li>Contact Us</li></a>
           </ul>
           <p>
-            SCAD StartUp is our annual, week-long design sprint hosted by FLUX - the UX club in collaboration with SCADpro
+            SCAD StartUp is an annual, week-long design sprint competition hosted by FLUX &#8212; SCAD's UX club &#8212; in collaboration with SCADpro
           </p>
         </footer>
       </div>
