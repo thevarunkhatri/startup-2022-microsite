@@ -28,7 +28,7 @@ const DesktopCircles = () => (
 
 const PortableCircles = () => (
   <>
-    <div className="centerCircle">
+    <div className="centerCircle portableCenterCircle">
       <AstralCircle/>
       <img src={Logo}/>
     </div>
@@ -47,12 +47,15 @@ const PortableCircles = () => (
 
 export default function Home() {
   const [pageWidth, setPageWidth] = useState();
+  const [pageHeight, setPageHeight] = useState();
 
   useEffect(() => {
     setPageWidth(window.innerWidth);
+    setPageHeight(window.innerHeight);
 
     function handleResize() {
       setPageWidth(window.innerWidth);
+      setPageHeight(window.innerHeight);
     }
 
     window.addEventListener('resize', handleResize);
@@ -69,6 +72,17 @@ export default function Home() {
       $('mask g').attr('transform', 'translate(' + relX + ',' + relY + ')');
     });
   });
+
+  function determineType(w, h) {
+    if(w < 1000) {
+      return(<PortableCircles/>)
+    } else {
+      if(w < 1100 && h > 900) {
+        return(<PortableCircles/>)
+      }
+      return(<DesktopCircles/>)
+    }
+  }
   
   return(
     <div className="fullPage">
@@ -101,7 +115,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          {pageWidth > 900 ? <DesktopCircles/> : <PortableCircles/>}
+          {determineType(pageWidth, pageHeight)}
         </main>
 
         <footer>
