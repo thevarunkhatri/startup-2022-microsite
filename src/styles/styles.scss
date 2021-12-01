@@ -241,11 +241,17 @@ main {
     .centerCircle {
         width: 500px;
         height: 500px;
-        margin: 0 40px;
+        margin: 0 80px;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media only screen and (max-width: 1400px) {
+            width: 430px;
+            height: 430px;
+            margin: 0 50px;
+        }
 
         @media only screen and (max-width: 1200px) {
             width: 430px;
@@ -326,6 +332,10 @@ main {
             position: absolute;
             height: 60px;
             top: 220px;
+
+            @media only screen and (max-width: 1400px) {
+                top: 185px;
+            }
 
             @media only screen and (max-width: 1200px) {
                 height: 50px;
