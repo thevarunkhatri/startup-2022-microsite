@@ -19,10 +19,10 @@ const DesktopCircles = () => (
         <AstralCircle/>
         <img src={Logo}/> 
       </div>
-      <div className="smallerCircle countdown">
-        <p>Unlock Full Site</p>
-        <Countdown date={new Date(2022, 0, 15)} />
-      </div>
+      <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" className="smallerCircle countdown">
+        <p>Click Here</p>
+        <h2>Sign Up Now</h2>
+      </a>
   </>
 );
 
@@ -37,10 +37,10 @@ const PortableCircles = () => (
         <FLUX/>
         <SCADpro/>
       </div>
-      <div className="smallerCircle countdown">
-        <p>Unlock Full Site</p>
-        <Countdown date={new Date(2022, 0, 15)} />
-      </div>
+      <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" className="smallerCircle countdown">
+        <p>Click Here</p>
+        <h2>Sign Up Now</h2>
+      </a>
     </div>
   </>
 );
