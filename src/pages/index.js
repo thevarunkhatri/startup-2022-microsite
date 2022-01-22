@@ -123,7 +123,7 @@ export default function Home() {
             <a href="https://2021.scadstartup.com" target="_blank"><li>Startup 2021</li></a>
             <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>Startup Instagram</li></a>
             <a href="https://www.instagram.com/scadflux/" target="_blank"><li>FLUX Instagram</li></a>
-            <a href="mailto:scadflux@gmail.com"><li>Contact Us</li></a>
+            <a href="https://discord.gg/2b2XV3dWfK"><li>Discord</li></a>
           </ul>
           <p>
             SCAD StartUp is an annual, week-long design sprint competition hosted by FLUX &#8212; SCAD's UX club &#8212; in collaboration with SCADpro
